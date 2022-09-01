@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="btn1">
+    <button id="btn2">加入购物车</button>
+    <div>您购买的数量： <span id="btn3"></span></div>
+    <!-- 练习：点击加入购物车按钮，判断用户输入的值是否含有非数字，如果含有非数字，警示框弹出'非法的数量'，否则显示 ‘您购买的数量：xxx’ -->
+    <script>
+        btn2.onclick=function(){
+           var a=btn1.value
+            if(isNaN(a)){
+                alert('非法的数量')
+            }else{
+                btn3.innerHTML=a;
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
