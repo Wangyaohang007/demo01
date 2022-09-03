@@ -2,11 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>美食天下</title>
+		<title>美食中国</title>
 		<link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="css/bootstrap-icons.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="public/bootstrap/bootstrap-icons.css">
+		<link rel="stylesheet" href="public/bootstrap/bootstrap.css">
+		<script  src="public/bootstrap/bootstrap.bundle.js"></script>
+		<script defer=true src="index.js"></script>
 	</head>
 	<body>
 		<div class="content">
@@ -46,6 +48,277 @@
 						</li>
 					</ul>
 					<button>登录/注册</button>
+				</div>
+			</div>
+			<!-- 导航 -->
+			<div class="nav">
+				<div class="nav-bd">
+					<h2>美食中国</h2>
+				</div>
+				<div class="nav-hd">
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">菜谱</a>
+
+						</li>
+						<li>
+							<a href="#">食材</a>
+						</li>
+						<li>
+							<a href="#">健康</a>
+						</li>
+						<li>
+							<a href="#">专题</a>
+						</li>
+						<li>
+							<a href="#">笔记</a>
+						</li>
+						<li>
+							<a href="#">社区</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-sd">
+					<img src="images/home/search.png" alt="">
+					<button>搜索</button>
+					<input type="text">
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 轮播图 -->
+				<div class="carouse">
+					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+								aria-label="Slide 5"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+								aria-label="Slide 6"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/home/01.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/home/02.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/home/03.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/home/04.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/home/05.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/home/06.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden"></span>
+						</button>
+					</div>
+				</div>
+				<!-- 菜单 -->
+				<div class="menu">
+					<ul class="menu-bd">
+						<li>
+							<a href="#">菜谱大全</a>
+							<ol class="submenu">
+								<li>
+									<a href="#">一周热门</a>
+								</li>
+								<li>
+									<a href="#">人气菜肴</a>
+								</li>
+								<li>
+									<a href="#">春季食谱</a>
+								</li>
+								<li>
+									<a href="#">早餐</a>
+								</li>
+								<li>
+									<a href="#">高颜值</a>
+								</li>
+								<li>
+									<a href="#">凉菜</a>
+								</li>
+								<li>
+									<a href="#">热菜</a>
+								</li>
+								<li>
+									<a href="#">主食</a>
+								</li>
+								<li>
+									<a href="#">小吃</a>
+								</li>
+								<li>
+									<a href="#">酱泡腌菜</a>
+								</li>
+								<li>
+									<a href="#">新秀菜谱</a>
+								</li>
+								<li>
+									<a href="#">所有分类</a>
+								</li>
+							</ol>
+						</li>
+
+						<li>
+							<a href="#">食材大全</a>
+							<ol class="submenu">
+								<li>
+									<a href="#">营养排行</a>
+								</li>
+								<li>
+									<a href="#">秋葵</a>
+								</li>
+								<li>
+									<a href="#">西红柿</a>
+								</li>
+								<li>
+									<a href="#">黑木耳</a>
+								</li>
+								<li>
+									<a href="#">小龙虾</a>
+								</li>
+								<li>
+									<a href="#">螃蟹</a>
+								</li>
+								<li>
+									<a href="#">鸡翅</a>
+								</li>
+								<li>
+									<a href="#">肉禽蛋</a>
+								</li>
+								<li>
+									<a href="#">水厂品</a>
+								</li>
+								<li>
+									<a href="#">蔬菜瓜菌</a>
+								</li>
+								<li>
+									<a href="#">鲜果干果</a>
+								</li>
+								<li>
+									<a href="#">米面豆乳</a>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">饮食健康</a>
+							<ol class="submenu">
+								<li>
+									<a href="#">最新推荐</a>
+								</li>
+								<li>
+									<a href="#">饮食常识</a>
+								</li>
+								<li>
+									<a href="#">瘦身美容</a>
+								</li>
+								<li>
+									<a href="#">气血双补</a>
+								</li>
+								<li>
+									<a href="#">痛经</a>
+								</li>
+								<li>
+									<a href="#">驱寒暖身</a>
+								</li>
+								<li>
+									<a href="#">对抗雾霾</a>
+								</li>
+								<li>
+									<a href="#">失眠</a>
+								</li>
+								<li>
+									<a href="#">食疗食补</a>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">专题专区</a>
+							<ol class="submenu">
+								<li>
+									<a href="#">菜单</a>
+								</li>
+								<li>
+									<a href="#">家常菜谱</a>
+								</li>
+								<li>
+									<a href="#">食疗食补</a>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">一起红</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 产品 -->
+				<div class="gulid">
+					<a href="#">新秀菜谱</a>
+					<a href="#">一周热门</a>
+					<a href="#">最受欢迎的家常菜</a>
+					<ul>
+						<li>
+							<a href="#">热菜</a>
+						</li>
+						<li>
+							<a href="#">凉菜</a>
+						</li>
+						<li>
+							<a href="#">主食</a>
+						</li>
+						<li>
+							<a href="#">小吃</a>
+						</li>
+						<li>
+							<a href="#">饮品</a>
+						</li>
+						<li>
+							<a href="#">家常菜谱</a>
+						</li>
+						<li>
+							<a href="#">菜谱首页</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 产品详情 -->
+				<div class="products">
+					<ol id="ProductsList"></ol>
 				</div>
 			</div>
 		</div>

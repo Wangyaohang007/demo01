@@ -1,21 +1,24 @@
-.head{
+.head {
 	width: 100%;
 	height: 40px;
 	background-color: #333;
 	display: flex;
 }
-.head .header{
+
+.head .header {
 	display: flex;
 	width: 990px;
 	margin: 0 auto;
 	height: 40px;
 	justify-content: space-between;
 }
-.head .header ul{
+
+.head .header ul {
 	display: flex;
 	justify-content: space-between;
 }
-.head .header ul li a{
+
+.head .header ul li a {
 	width: 48px;
 	height: 40px;
 	color: #ccc;
@@ -23,14 +26,241 @@
 	font-size: 14px;
 	padding: 10px 10px;
 }
-.head .header ul li a:hover{
+
+.head .header ul li a:hover {
 	color: #fff;
 	background-color: #000;
 }
-.head .header button{
+
+.head .header button {
 	width: 80px;
 	height: 30px;
 	margin: 5px 0;
 	font-size: 14px;
 	color: #666;
+}
+/* 导航 */
+.nav {
+	width: 990px;
+	height: 60px;
+	margin: 10px auto;
+	display: flex;
+	position: relative;
+}
+
+.nav .nav-bd {
+	width: 150px;
+	height: 60px;
+}
+
+.nav .nav-bd h2 {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 60px;
+	font-family: '幼圆';
+}
+
+.nav .nav-hd {
+	width: 400px;
+	height: 115px;
+	margin: 0 100px;
+}
+
+.nav .nav-hd ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav .nav-hd ul li {
+	font-size: 20px;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.nav .nav-hd ul li:nth-child(1) a {
+	color: #ff6767;
+}
+
+.nav .nav-hd ul li a:hover {
+	color: #ff6767;
+}
+
+.nav .nav-sd {
+	position: absolute;
+	right: 0;
+	bottom: 16px;
+	padding-top: 30px;
+}
+
+.nav .nav-sd input {
+	display: block;
+	float: left;
+	width: 167px;
+	height: 27px;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #ccc;
+	border-right-width: 0;
+}
+
+.nav .nav-sd button {
+	float: right;
+	width: 80px;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 0 5px 5px 0;
+	background-color: #999;
+	color: #fff;
+	text-indent: 15px;
+	font-size: 14px;
+}
+
+.nav .nav-sd button:hover {
+	background-color: #ff6767;
+}
+
+.nav .nav-sd img {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 57px;
+	top: 36px;
+}
+/* 主体 */
+.main {
+	margin: 10px auto;
+	width: 990px;
+	position: relative;
+}
+
+.main .carouse {
+	width: 100%;
+	height: 360px;
+}
+/* 轮播图 */
+.main .carouse .carousel-control-prev {
+	left: 171px;
+}
+
+.main .carouse .carousel-control-next {
+	right: -46px;
+}
+/* 菜单 */
+.main .menu {
+	width: 220px;
+	height: 360px;
+	background: rgba(65, 65, 65, 0.4);
+	position: absolute;
+	left: 0px;
+	top: 0;
+}
+
+.main .menu .menu-bd {
+	margin: 0;
+	padding: 30px 0;
+	position: relative;
+}
+
+.main .menu .menu-bd>li {
+	font-size: 18px;
+	width: 220px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.main .menu .menu-bd>li:hover {
+	background-color: #ff6767;
+	color: #fff;
+}
+
+.main .menu .menu-bd>li a {
+	color: #fff;
+}
+
+.main .menu .menu-bd>li:hover .submenu {
+	opacity: 1;
+}
+
+.main .menu .menu-bd>li .submenu {
+	width: 380px;
+	height: 360px;
+	background-color: #fff;
+	position: absolute;
+	left: 220px;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+
+.main .menu .menu-bd .submenu>li {
+	font-size: 18px;
+	width: 120px;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+}
+
+.main .menu .menu-bd .submenu>li:hover {
+	color: #ff6767;
+}
+.main .menu .menu-bd .submenu>li a{
+	color: #000;
+}
+/* 产品 */
+.gulid{
+	width: 990px;
+	height: 37px;
+	margin-top: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.gulid>a{
+	float: left;
+	font-size: 20px;
+	color: #666;
+	margin-right: 40px;
+}
+.gulid>a:nth-child(1){
+	color: #ff6767;
+}
+.gulid a:hover{
+	color: #ff6767;
+}
+.gulid ul{
+	float: right;
+	display: flex;
+}
+.gulid ul li a{
+	margin-left: 20px;
+}
+.products{
+	width: 990px;
+	height: 1200px;
+	margin-top: 10px;
+}
+.products ol{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.products ol li a{
+	text-align: center;
+}
+.products ol li a img{
+	width: 230px;
+	height: 230px;
+}
+.products ol li a p{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.products ol li a p:hover{
+	color: #ff6767;
 }
