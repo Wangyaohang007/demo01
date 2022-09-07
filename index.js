@@ -1,3 +1,23 @@
+//产品详情
+var gulidMenuList = [
+	{	name: '新秀菜谱'},
+	{	name: '一周热门'},
+	{	name: '最受欢迎的家常菜'},
+]
+console.log(($))
+var gulidStr = ''
+gulidMenuList.forEach((menu,i)=>{
+	gulidStr += `<a href="#" key=${i} class="${i===0?'select':''}" onClick='toggleMeun(${i})'>${menu.name}</a>`
+})
+$('#GulidTitle').html(gulidStr)
+// $('#GulidTitle').find('a').on('click',toggleMeun)
+function toggleMeun(e,i){
+	console.log(e)
+	var target = e.target
+	$('#GulidTitle a').removeClass('select');
+	$('#GulidTitle a').eq(i).addClass('select')
+}
+
 var products=[
 	{img:'07.jpg',title:'番茄牛腩面'},
 	{img:'08.jpg',title:'蒜泥白肉'},
@@ -21,5 +41,28 @@ products.forEach((item,index)=>{
 	str+=`<li><a href="#"><img src="images/home/${item.img}" alt=""><p>${item.title}</p></a></li>`
 })
 var ProductsList = document.getElementById('ProductsList')
-console.log(ProductsList,str)
 ProductsList.innerHTML=str
+// 食材
+var summary=[
+	{img:'caomei.jpg',title:'草莓'},
+	{img:'chunsun.jpg',title:'春笋'},
+	{img:'douya.jpg',title:'豆芽'},
+	{img:'guiyu.jpg',title:'鳜鱼'},
+	{img:'jicai.jpg',title:'荠菜'},
+	{img:'jichi.jpg',title:'鸡翅'},
+	{img:'jiucai.jpg',title:'韭菜'},
+	{img:'jiyu.jpg',title:'鲫鱼'},
+	{img:'shanyao.jpg',title:'山药'},
+	{img:'shenghao.jpg',title:'生蚝'},
+	{img:'paigu.jpg',title:'排骨'},
+	{img:'wosun.jpg',title:'莴笋'},
+	{img:'zhugan.jpg',title:'猪肝'},
+	{img:'zhuliji.jpg',title:'猪里脊'},
+]
+var str1=''
+summary.forEach((item,index)=>{
+	str1+=`<li><a href="#"><img src="images/home/${item.img}" alt=""><p>${item.title}</p></a></li>`
+})
+var Summarylist = document.getElementById('Summarylist')
+Summarylist.innerHTML=str1
+

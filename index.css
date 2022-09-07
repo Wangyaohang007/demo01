@@ -1,3 +1,4 @@
+
 .head {
 	width: 100%;
 	height: 40px;
@@ -57,7 +58,7 @@
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 60px;
-	font-family: '幼圆';
+	font-family: arial;
 }
 
 .nav .nav-hd {
@@ -169,7 +170,7 @@
 	text-align: center;
 }
 
-.main .menu .menu-bd>li:hover {
+.main .menu .menu-bd>li:hover{
 	background-color: #ff6767;
 	color: #fff;
 }
@@ -217,25 +218,35 @@
 	margin-top: 40px;
 	border-bottom: 1px solid #ccc;
 }
-.gulid>a{
+.gulid .gulid-title {
 	float: left;
 	font-size: 20px;
 	color: #666;
+}
+.gulid .gulid-title a{
 	margin-right: 40px;
 }
-.gulid>a:nth-child(1){
-	color: #ff6767;
+.gulid .gulid-title.select{
+	padding-bottom: 5px;
+	border-bottom: 3px solid #ff6767;
 }
-.gulid a:hover{
+.gulid .gulid-title a:nth-child(1){
+	color: #ff6767;
+	padding-bottom: 6px;
+	border-bottom: 3px solid #ff6767;
+}
+.gulid .gulid-title a:hover{
 	color: #ff6767;
 }
 .gulid ul{
 	float: right;
 	display: flex;
+	margin-top: 4px;
 }
 .gulid ul li a{
 	margin-left: 20px;
 }
+/* 产品详情 */
 .products{
 	width: 990px;
 	height: 1200px;
@@ -263,4 +274,294 @@
 }
 .products ol li a p:hover{
 	color: #ff6767;
+}
+/* 时令食材 */
+.food .food-title{
+	height: 37px;
+	width: 990px;
+	margin-top: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.food .food-title>a{
+	height: 37px;
+	line-height: 37px;
+	font-size: 20px;
+	color: #ff6767;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #ff6767;
+	
+}
+
+.food .food-title ul{
+	float: right;
+	height: 37px;
+	display: flex;
+	line-height: 37px;
+}
+.food .food-title ul li{
+	margin-left: 20px;
+}
+.food .food-title ul li a:hover{
+	color: #ff6767;
+}
+.food .summary{
+	width: 990px;
+	height: 370px;
+}
+.food .summary ol{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+.food .summary ol li img{
+	width: 126px;
+	height: 126px;
+}
+.food .summary ol li a{
+	text-align: center;
+}
+.food .summary ol li a p{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.food .summary ol li a p:hover{
+	color: #ff6767;
+}
+/* 推荐 */
+.service{
+	width: 990px;
+	height: 400px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.service .healthy{
+	width: 310px;
+	height: 400px;
+}
+.service .healthy .healthy-title{
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.service .healthy .healthy-title a{
+	font-size: 20px;
+	font-weight: 400;
+	color: #666;
+	line-height: 36px;
+	margin-right: 15px;
+}
+.service .healthy .healthy-title a:hover{
+	color: #ff6767;
+}
+.service .healthy .healthy-title a:nth-child(1){
+	color: #ff6767;
+	border-bottom:3px solid #ff6767;
+}
+.service .healthy .healthy-title a:nth-child(3){
+	color: #333;
+	font-size: 16px;
+	margin-left: 121px;
+	margin-top: 3px;
+}
+.service .healthy .healthy-title a:nth-child(3):hover{
+	color: #ff6767;
+}
+.service .healthy img{
+	width: 310px;
+	height: 124px;
+}
+.service .healthy ul{
+	width: 100%;
+	height: 216px;
+}
+.service .healthy ul li{
+	margin-top: 10px;
+	height: 26px;
+	font-size: 16px
+}
+.service .healthy ul li:hover a{
+	color: #ff6767;
+}
+.service .cure{
+	width: 310px;
+	height: 400px;
+}
+.service .cure .cure-title{
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.service .cure .cure-title a{
+	font-size: 20px;
+	font-weight: 400;
+	color: #666;
+	line-height: 36px;
+	margin-right: 15px;
+}
+.service .cure .cure-title a:hover{
+	color: #ff6767;
+}
+.service .cure .cure-title a:nth-child(1){
+	color: #ff6767;
+	border-bottom:3px solid #ff6767;
+}
+.service .cure .cure-title a:nth-child(3){
+	color: #333;
+	font-size: 16px;
+	margin-left: 121px;
+	margin-top: 3px;
+}
+.service .cure .cure-title a:nth-child(3):hover{
+	color: #ff6767;
+}
+.service .cure img{
+	width: 310px;
+	height: 124px;
+}
+.service .cure ul{
+	width: 100%;
+	height: 216px;
+}
+.service .cure ul li{
+	margin-top: 10px;
+	height: 26px;
+	font-size: 16px
+}
+.service .cure ul li:hover a{
+	color: #ff6767;
+}
+.service .recommend{
+	width: 310px;
+	height: 400px;
+}
+.service .recommend .recommend-title{
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.service .recommend .recommend-title a{
+	font-size: 20px;
+	font-weight: 400;
+	color: #666;
+	line-height: 36px;
+	margin-right: 15px;
+}
+.service .recommend .recommend-title a:hover{
+	color: #ff6767;
+}
+.service .recommend .recommend-title a:nth-child(1){
+	color: #ff6767;
+	border-bottom:3px solid #ff6767;
+}
+.service .recommend .recommend-title a:nth-child(2){
+	color: #333;
+	font-size: 16px;
+	margin-left: 134px;
+	margin-top: 3px;
+}
+.service .recommend .recommend-title a:nth-child(2):hover{
+	color: #ff6767;
+}
+.service .recommend img{
+	width: 310px;
+	height: 124px;
+}
+.service .recommend ul{
+	width: 100%;
+	height: 216px;
+}
+.service .recommend ul li{
+	margin-top: 10px;
+	height: 26px;
+	font-size: 16px
+}
+.service .recommend ul li:hover a{
+	color: #ff6767;
+}
+.forum{
+	width: 990px;
+}
+.forum .forum-title{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.forum .forum-title>ul>li {
+	float: left;
+	line-height: 36px;
+	font-size: 20px;
+	color: #666;
+	margin-right: 15px;
+}
+.forum .forum-title>ul>li:nth-child(1) a{
+	color: #ff6767;
+	border-bottom: 3px solid #ff6767;
+	padding-bottom: 3px;
+}
+.forum .forum-title>ul>li>a:hover{
+	color: #ff6767;
+}
+.forum .forum-title>ol>li {
+	float: right;
+	font-size: 16px;
+	margin-left: 20px;
+	line-height: 36px;
+}
+.forum .forum-title>ol>li>a:hover{
+	color: #ff6767;
+}
+.forum-menu>ul{
+	width: 990px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: pink;
+}
+
+.forum-menu>ul>li{
+	width: 460px;
+	height: 250px;
+	margin-bottom: 60px;
+}
+.forum-menu>ul>li>div{
+	display: flex;
+	
+}
+.forum-menu>ul>li>div>img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.forum-menu>ul>li>div>div{
+	width: 368px;
+	height: 42px;
+	margin-right: 40px;
+}
+.forum-menu>ul>li>div>div>div{
+	font-size: 12px;
+	color: #666;
+}
+.forum-menu>ul>li>div{
+	height: 42px;
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+	
+}
+.forum-menu>ul>li>div>a>img{
+	width: 100px;
+	height: 100px;
 }

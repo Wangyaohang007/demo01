@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="public/bootstrap/bootstrap-icons.css">
 		<link rel="stylesheet" href="public/bootstrap/bootstrap.css">
-		<script  src="public/bootstrap/bootstrap.bundle.js"></script>
+		<script src="public/bootstrap/bootstrap.bundle.js"></script>
+		<script src="public/jquery/jquery3.6.min.js"></script>
 		<script defer=true src="index.js"></script>
 	</head>
 	<body>
@@ -289,9 +290,11 @@
 				</div>
 				<!-- 产品 -->
 				<div class="gulid">
-					<a href="#">新秀菜谱</a>
-					<a href="#">一周热门</a>
-					<a href="#">最受欢迎的家常菜</a>
+					<div class="gulid-title" id="GulidTitle">
+						<!-- <a href="#" class="select" onclick="toggleMenu()">新秀菜谱</a>
+						<a href="#">一周热门</a>
+						<a href="#">最受欢迎的家常菜</a> -->
+					</div>
 					<ul>
 						<li>
 							<a href="#">热菜</a>
@@ -320,7 +323,250 @@
 				<div class="products">
 					<ol id="ProductsList"></ol>
 				</div>
+				<!-- 时令食材 -->
+				<div class="food">
+					<div class="food-title">
+						<a href="#">时令食材</a>
+						<ul>
+							<li>
+								<a href="#">食疗食补</a>
+							</li>
+							<li>
+								<a href="#">肉禽蛋</a>
+							</li>
+							<li>
+								<a href="#">水产品</a>
+							</li>
+							<li>
+								<a href="#">蔬菜</a>
+							</li>
+							<li>
+								<a href="#">米面豆乳</a>
+							</li>
+							<li>
+								<a href="#">食材首页</a>
+							</li>
+						</ul>
+					</div>
+					<div class="summary">
+						<ol id="Summarylist"></ol>
+					</div>
+				</div>
+				<!-- 推荐 -->
+				<div class="service">
+					<div class="healthy">
+						<div class="healthy-title">
+							<a href="#">健康</a>
+							<a href="#">食疗</a>
+							<a href="#">健康首页</a>
+						</div>
+						<img src="images/home/jiankang.jpg" alt="">
+						<ul>
+							<li>
+								<a href="#">降血压食物推荐，从日常开始改善!</a>
+							</li>
+							<li>
+								<a href="#">日常按摩这些部位，养生更养身</a>
+							</li>
+							<li>
+								<a href="#">脑溢血原因，冬天要更注意</a>
+							</li>
+							<li>
+								<a href="#">孩子体质差总生病，父母该怎么办？</a>
+							</li>
+							<li>
+								<a href="#">专题:快手早餐，营养满分の三明治</a>
+							</li>
+							<li>
+								<a href="#">专题:那些美颜食物的神级吃法</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cure">
+						<div class="cure-title">
+							<a href="#">烘焙</a>
+							<a href="#">食谱</a>
+							<a href="#">烘焙专区</a>
+						</div>
+						<img src="images/home/hongpei.jpg" alt="">
+						<ul>
+							<li>
+								<a href="#">不输猪油版的桃酥做法</a>
+							</li>
+							<li>
+								<a href="#">这些挑水果小窍门，你知道吗？</a>
+							</li>
+							<li>
+								<a href="#">内藏惊喜的彩虹戚风蛋糕</a>
+							</li>
+							<li>
+								<a href="#">消耗蛋挞皮－简单版红薯酥</a>
+							</li>
+							<li>
+								<a href="#">菜单：油条华丽转身，也是蛮拼哒</a>
+							</li>
+							<li>
+								<a href="#">专题：另类咸香口儿 满足你的味蕾！</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="recommend">
+						<div class="recommend-title">
+							<a href="#">为您推荐</a>
+							<a href="#">我的收藏</a>
+						</div>
+						<img src="images/home/zhou.jpg" alt="">
+						<ul>
+							<li>
+								<a href="#">合理饮食，远离脂肪肝</a>
+							</li>
+							<li>
+								<a href="#">划重点！食物降血脂这些更有效</a>
+							</li>
+							<li>
+								<a href="#">粗粮细作：健康能量燕麦甜品</a>
+							</li>
+							<li>
+								<a href="#">妈妈派:童趣童味，儿童创意餐点</a>
+							</li>
+							<li>
+								<a href="#">免费抽奖:小熊伊万多功能切刨丝器</a>
+							</li>
+							<li>
+								<a href="#">专题:酒后头痛，5种食物可缓解</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 论坛 -->
+				<div class="forum">
+					<div class="forum-title">
+						<ul>
+							<li>
+								<a href="#">热门笔记</a>
+							</li>
+							<li>
+								<a href="#">精华日志</a>
+							</li>
+						</ul>
+						<ol>
+							<li>
+								<a href="#">全部笔记</a>
+							</li>
+							<li>
+								<a href="#">全部日志</a>
+							</li>
+							<li>
+								<a href="#">社区首页</a>
+							</li>
+						</ol>
+					</div>
+					<div class="forum-menu">
+						<ul>
+							<li>
+								<div>
+									<img src="images/home/touxiang1.jpg" alt="">
+									<div>
+										<a href="#">冰海恋雨</a>
+										<div>9/4 18:22</div>
+									</div>
+								</div>
+								<div>#淡蓝色洋桔梗# 闲而有趣 在平淡琐碎的日子里 学会用自己喜欢的方式取悦自己”</div>
+								<div>
+									<a href="#">
+										<img src="images/home/1_1.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_2.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_3.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_4.jpg" alt="">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="images/home/touxiang2.jpg" alt="">
+									<div>
+										<a href="#">沙儿飞飞</a>
+										<div>9/5 15:16</div>
+									</div>
+								</div>
+								<div>#早餐# 早上好🌞</div>
+								<div>
+									<a href="#">
+										<img src="images/home/.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/2_2.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/2_3.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/2_4.jpg" alt="">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="images/home/touxiang3.jpg" alt="">
+									<div>
+										<a href="#">清水淡竹</a>
+										<div>9/6 11:20</div>
+									</div>
+								</div>
+								<div>#淡蓝色洋桔梗# 闲而有趣 在平淡琐碎的日子里 学会用自己喜欢的方式取悦自己”</div>
+								<div>
+									<a href="#">
+										<img src="images/home/1_1.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_2.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_3.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_4.jpg" alt="">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="images/home/touxiang4.jpg" alt="">
+									<div>
+										<a href="#">冰海恋雨</a>
+										<div>9/4 18:22</div>
+									</div>
+								</div>
+								<div>#淡蓝色洋桔梗# 闲而有趣 在平淡琐碎的日子里 学会用自己喜欢的方式取悦自己”</div>
+								<div>
+									<a href="#">
+										<img src="images/home/1_1.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_2.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_3.jpg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/home/1_4.jpg" alt="">
+									</a>
+								</div>
+							</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
