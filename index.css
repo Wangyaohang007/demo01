@@ -196,7 +196,9 @@
 	padding: 0;
 	opacity: 0;
 }
-
+.main .menu .menu-bd>li .submenu:hover{
+	opacity: 1;
+}
 .main .menu .menu-bd .submenu>li {
 	font-size: 18px;
 	width: 120px;
@@ -524,7 +526,6 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	background-color: pink;
 }
 
 .forum-menu>ul>li{
@@ -564,4 +565,27 @@
 .forum-menu>ul>li>div>a>img{
 	width: 100px;
 	height: 100px;
+}
+/* 底部 */
+.foot p:nth-child(1){
+	width: 154px;
+	height: 19px;
+	color: #f50;
+	font-size: 14px;
+	font-weight: 700;
+}
+.foot p:nth-child(1):hover{
+	border-bottom:2px solid #f50;
+}
+.foot p:nth-child(2){
+	font-size: 12px;
+	width: 720px;
+	height: 20px;
+	color: #666;
+}
+.foot p:nth-child(3){
+	width: 700px;
+	height: 40px;
+	font-size: 12px;
+	color: #666;
 }
