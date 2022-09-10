@@ -19,7 +19,7 @@ function toggleMeun(e,i){
 }
 
 var products=[
-	{img:'1_1.jpg',title:'番茄牛腩面'},
+	{img:'paigu.jpg',title:'红烧排骨'},
 	{img:'1_2.jpg',title:'蒜泥白肉'},
 	{img:'1_3.jpg',title:'酱香带鱼'},
 	{img:'1_4.jpg',title:'家常烧鱿鱼'},
