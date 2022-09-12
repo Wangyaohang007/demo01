@@ -1,0 +1,198 @@
+.content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.head {
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+	display: flex;
+}
+
+.head .header {
+	display: flex;
+	width: 990px;
+	margin: 0 auto;
+	height: 40px;
+	justify-content: space-between;
+}
+
+.head .header ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.head .header ul li a {
+	width: 48px;
+	height: 40px;
+	color: #ccc;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 10px 10px;
+}
+
+.head .header ul li a:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+.head .header button {
+	width: 80px;
+	height: 30px;
+	margin: 5px 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* 背景 */
+.back {
+	position: relative;
+}
+
+.back img {
+	background: transparent;
+}
+
+.back .user {
+	/* z-index: 1; */
+	width: 530px;
+	height: 350px;
+	position: absolute;
+	top: 18%;
+	left: 32%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.back .user .user-bd {
+	display: flex;
+	width: 530px;
+	height: 50px;
+}
+
+.back .user .user-bd a {
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+}
+
+.back .user .user-bd a:nth-child(1) {
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+}
+
+/* 登录 */
+
+.user-hd {
+	margin-top: 40px;
+}
+
+.user-hd ul li {
+	width: 300px;
+	height: 33px;
+	border: 1px solid #999;
+	margin-left: 20px;
+	border-radius: 5px 5px 0 0;
+	display: flex;
+}
+
+.user-hd ul li:nth-child(2) {
+	border-radius: 0 0 5px 5px;
+	border-top: none;
+}
+
+.user-hd ul li label {
+	padding: 0 5px;
+	line-height: 33px;
+}
+
+.user-hd ul li input {
+	width: 194px;
+	height: 30px;
+	background: rgba(255, 255, 255, .1);
+}
+
+.user-hd div {
+	width: 320px;
+	height: 43px;
+	margin: 10px 0;
+	display: flex;
+}
+
+.user-hd div input {
+	width: 13px;
+	height: 13px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.user-hd div>span {
+	line-height: 33px;
+}
+
+.user-hd div p {
+	line-height: 33px;
+	margin-left: 130px;
+}
+
+.user-hd div p:hover {
+	color: #ff6767;
+	cursor: pointer;
+}
+
+.user-hd>p {
+	width: 320px;
+	margin-left: 23px;
+}
+
+.user-hd button {
+	margin: 20px;
+	width: 300px;
+	height: 40px;
+	background-color: #ff6767;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.user .barcode {
+	width: 165px;
+	height: 200px;
+	position: absolute;
+	right: 3%;
+	top: 20%;
+}
+
+.user .barcode img {
+	width: 110px;
+	height: 110px;
+	margin: 0 26px;
+}
+
+.user .barcode p {
+	margin: 5px 12px;
+}
+
+.user .barcode .btn i {
+	font-size: 30px;
+	margin: 10px;
+}
+
+.user .barcode .btn i:nth-child(1) {
+	color: rgb(14, 151, 225);
+}
+
+.user .barcode .btn i:nth-child(2) {
+	color: rgb(0, 197, 0);
+}
+
+.user .barcode .btn i:nth-child(3) {
+	color: rgb(231, 75, 57);
+}

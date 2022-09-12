@@ -174,9 +174,16 @@
 	background-color: #ff6767;
 	color: #fff;
 }
-
+.main .menu .menu-bd>li .ms{
+	font-size: 18px;
+	color: #fff;
+	line-height: 60px;
+}
 .main .menu .menu-bd>li a {
 	color: #fff;
+	width: 72px;
+	line-height: 60px;
+	display: inline-block;
 }
 
 .main .menu .menu-bd>li:hover .submenu {
