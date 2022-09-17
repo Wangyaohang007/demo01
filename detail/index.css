@@ -47,6 +47,7 @@
 	margin: 0px auto;
 	display: flex;
 	position: relative;
+	margin-top: 10px;
 }
 
 .nav .nav-bd {
@@ -109,6 +110,7 @@
 	border-radius: 5px 0 0 5px;
 	border: 1px solid #ccc;
 	border-right-width: 0;
+	padding-left:10px;
 }
 
 .nav .nav-sd button {
@@ -131,8 +133,8 @@
 	width: 15px;
 	height: 15px;
 	position: absolute;
-	right: 57px;
-	top: 36px;
+	right: 55px;
+	top: 38px;
 }
 .nav-tabs{
 	width: 990px;
