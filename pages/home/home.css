@@ -1,0 +1,181 @@
+#main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+#main > .swiper-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: var(--container-width);
+  overflow: hidden;
+  margin-top: 20px;
+}
+#main > .swiper-container .swiper-wrapper img {
+  width: var(--container-width);
+  height: 400px;
+}
+#main > .swiper-container > .pagination {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 100;
+}
+#main > .swiper-container > .pagination > .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+#main > #gulid {
+  background-color: rgb(240, 241, 240);
+}
+#main > #gulid h2 {
+  margin: 20px 0;
+}
+#main > #gulid > .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#main > #gulid > .item > .item-bd {
+  width: calc((100% - 60px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#main > #gulid > .item > .item-bd:hover > h4 {
+  color: rgb(226, 78, 78);
+}
+#main > #gulid > .item > .item-bd:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+#main > #gulid > .item > .item-bd > div {
+  width: 235px;
+  height: 235px;
+  overflow: hidden;
+}
+#main > #gulid > .item > .item-bd > div > img {
+  width: 100%;
+  border-radius: 8px;
+}
+#main > #gulid > .item > .item-bd > h4 {
+  margin: 10px;
+}
+#main > #gulid > .item > .item-bd > span {
+  font-size: 12px;
+  color: #999;
+}
+#main > #food {
+  background-color: rgb(240, 240, 240);
+}
+#main > #food h2 {
+  margin: 10px 0;
+}
+#main > #food > .food-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main > #food > .food-title > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 60px) / 6);
+}
+#main > #food > .food-title > div:hover > div {
+  color: rgb(226, 78, 78);
+}
+#main > #food > .food-title > div:hover > img {
+  box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+}
+#main > #food > .food-title > div > img {
+  transition: 0.5s;
+  width: 100%;
+}
+#main > #food > .food-title > div > div {
+  margin: 5px 0;
+}
+#main > #food > .food-title > div > span {
+  font-size: 12px;
+  color: #999;
+}
+#main > #gorgeous {
+  background-color: rgb(240, 240, 240);
+}
+#main > #gorgeous > h2 {
+  margin: 20px 0;
+}
+#main > #gorgeous > .gorgeous-bd {
+  display: flex;
+  justify-content: space-between;
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd {
+  width: calc((100% - 30px) / 4);
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd:hover h4 {
+  color: rgb(226, 78, 78);
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd:hover img {
+  box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.1);
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd img {
+  transition: 0.3s linear;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 243px;
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd > div > p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+#main > #gorgeous > .gorgeous-bd > .gorgeous-dd > div > span {
+  color: #999;
+  font-size: 12px;
+}
+#main > #photo {
+  margin: 20px 0;
+  background-color: rgb(240, 240, 240);
+}
+#main > #photo > h2 {
+  margin-bottom: 20px;
+}
+#main > #photo > .photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main > #photo > .photo-list > .photo-item {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 235px;
+}
+#main > #photo > .photo-list > .photo-item:hover h4 {
+  color: rgb(235, 73, 73);
+}
+#main > #photo > .photo-list > .photo-item p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+#main > #photo > .photo-list > .photo-item > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  width: calc((100% - 30px) / 3);
+}
+#main > #photo > .photo-list > .photo-item > div:last-child > img {
+  width: 100%;
+  margin-right: 10px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+#main > #photo > .photo-list > .photo-item > div:last-child > img:hover {
+  box-shadow: 1px 5px 12px 1px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=home.css.map */

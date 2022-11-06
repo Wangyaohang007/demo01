@@ -1,0 +1,96 @@
+
+#main {
+  margin: 0 auto;
+  width: var(--container-width);
+
+  >.crumb {
+    margin: 10px 0;
+  }
+
+  >#diet {
+
+    >.item {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 15px 0;
+      justify-content: space-between;
+
+      >.item-bd {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: calc((100% - 60px) / 3);
+
+        &:hover {
+          h3 {
+            color: rgb(226, 78, 78);
+          }
+        }
+
+        >img {
+          width: 100%;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+
+          >p {
+            color: #666;
+            margin: 10px 0;
+          }
+
+          >span {
+            color: #999;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // 养生
+  >#well-being {
+
+    >.item {
+      margin: 15px 0;
+
+      >.item-bd {
+        display: flex;
+        margin-bottom: 20px;
+
+        &:hover {
+          h3 {
+            color: rgb(226, 78, 78);
+          }
+        }
+
+        >img {
+          width: 200px;
+          height: 150px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 20px;
+
+          >p {
+            color: #666;
+          }
+
+          >span {
+            color: #999;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

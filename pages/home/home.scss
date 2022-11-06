@@ -1,0 +1,237 @@
+#main {
+  width: var(--container-width);
+  margin: 0 auto;
+
+  >.swiper-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: var(--container-width);
+    overflow: hidden;
+    margin-top: 20px;
+
+    .swiper-wrapper {
+      img {
+        width: var(--container-width);
+        height: 400px;
+      }
+    }
+
+    >.pagination {
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      z-index: 100;
+
+      >.swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  // 新秀菜谱
+  >#gulid {
+    background-color: rgb(240, 241, 240);
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    >.item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+
+      >.item-bd {
+        width: calc((100% - 3 * 20px) / 4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:hover {
+          >h4 {
+            color: rgb(226, 78, 78);
+          }
+
+          img {
+            transform: scale(1.1);
+            overflow: hidden;
+            transition: all .5s linear;
+          }
+        }
+
+        >div {
+          width: 235px;
+          height: 235px;
+          overflow: hidden;
+
+          >img {
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
+
+        >h4 {
+          margin: 10px;
+        }
+
+        >span {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  // 时令食材
+  >#food {
+    background-color: rgb(240, 240, 240);
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    >.food-title {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc((100% - 6 * 10px) / 6);
+
+        &:hover {
+          >div {
+            color: rgb(226, 78, 78);
+          }
+
+          >img {
+            box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1)
+          }
+        }
+
+        >img {
+          transition: .5s;
+          width: 100%;
+        }
+
+        >div {
+          margin: 5px 0;
+        }
+
+        >span {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  // 高颜值
+  >#gorgeous {
+    background-color: rgb(240, 240, 240);
+
+    >h2 {
+      margin: 20px 0;
+    }
+
+    >.gorgeous-bd {
+      display: flex;
+      justify-content: space-between;
+
+      >.gorgeous-dd {
+        width: calc((100% - 30px) / 4);
+
+        &:hover {
+          h4 {
+            color: rgb(226, 78, 78);
+          }
+
+          img {
+            box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.1)
+          }
+        }
+
+        img {
+          transition: .3s linear;
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+          height: 243px;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          >p {
+            font-size: 14px;
+            margin: 15px 0;
+          }
+
+          >span {
+            color: #999;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  >#photo {
+    margin: 20px 0;
+    background-color: rgb(240, 240, 240);
+
+    >h2 {
+      margin-bottom: 20px;
+    }
+
+    >.photo-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      >.photo-item {
+        width: calc((100% - 20px) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 235px;
+
+        &:hover {
+          h4 {
+            color: rgb(235, 73, 73);
+          }
+        }
+
+        p {
+          margin: 10px 0;
+          font-size: 14px;
+        }
+
+        >div:last-child {
+          display: flex;
+          justify-content: space-between;
+          width: calc((100% - 30px) / 3);
+
+          >img {
+            width: 100%;
+            margin-right: 10px;
+            transition: .7s;
+            cursor: pointer;
+
+            &:hover {
+              box-shadow: 1px 5px 12px 1px rgba(0, 0, 0, 0.1)
+            }
+          }
+        }
+      }
+    }
+  }
+}

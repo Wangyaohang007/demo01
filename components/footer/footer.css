@@ -1,0 +1,7 @@
+#footer div {
+  margin: 0 auto;
+  width: var(--container-width);
+}
+#footer div p {
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

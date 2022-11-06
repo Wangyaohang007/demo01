@@ -1,0 +1,49 @@
+#main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+#main > .crumbs {
+  margin: 10px 0;
+}
+#main > .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main > .item .item-bd {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 60px) / 4);
+  margin-bottom: 20px;
+}
+#main > .item .item-bd:hover > img {
+  box-shadow: 1px 1px 10px #555;
+}
+#main > .item .item-bd:hover h4 {
+  color: rgb(226, 78, 78);
+}
+#main > .item .item-bd > img {
+  width: 100%;
+  transition: 0.8s;
+  border-radius: 8px;
+}
+#main > .item .item-bd > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+#main > .item .item-bd > div > p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+#main > .item .item-bd > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#main > .item .item-bd > div > div > span {
+  color: #999;
+  font-size: 14px;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,40 @@
+#main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+#main > .crumb {
+  margin: 10px 0;
+}
+#main > h2 {
+  margin-bottom: 20px;
+}
+#main > .item {
+  width: 700px;
+}
+#main > .item > .item-bd {
+  display: flex;
+}
+#main > .item > .item-bd:hover h3 {
+  color: rgb(222, 85, 85);
+}
+#main > .item > .item-bd img:hover {
+  box-shadow: 1px 1px 8px #555;
+}
+#main > .item > .item-bd img {
+  transition: 0.5s;
+  width: 240px;
+  height: 160px;
+  border-radius: 8px;
+}
+#main > .item > .item-bd > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#main > .item > .item-bd > div > p {
+  color: #555;
+}
+#main > .item > .item-bd > div > span {
+  color: #999;
+}/*# sourceMappingURL=note.css.map */

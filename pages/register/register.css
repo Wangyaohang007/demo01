@@ -1,0 +1,47 @@
+#main {
+  background-image: url("../../images/main/zhuce.png.webp");
+  display: flex;
+  height: calc(100vh - var(--header-height));
+  align-items: center;
+  flex-direction: column;
+}
+#main > div {
+  margin-top: 150px;
+}
+#main > div > h2 {
+  text-align: center;
+  color: #edce94;
+}
+#main > div > div > .item {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#main > div > div > .item > input {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 20px;
+}
+#main > div > div > .item span {
+  display: none;
+  font-size: 14px;
+}
+#main > div > div > .item span.ok {
+  color: green;
+}
+#main > div > div > .item span.err {
+  color: red;
+}
+#main > div > div > button {
+  width: 300px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  background-color: #ebc47c;
+}/*# sourceMappingURL=register.css.map */

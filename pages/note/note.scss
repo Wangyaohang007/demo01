@@ -1,0 +1,52 @@
+#main {
+  width: var(--container-width);
+  margin: 0 auto;
+
+  >.crumb {
+    margin: 10px 0;
+  }
+
+  >h2 {
+    margin-bottom: 20px;
+  }
+
+  >.item {
+    width: 700px;
+
+    >.item-bd {
+      display: flex;
+
+      &:hover {
+        h3 {
+          color: rgb(222, 85, 85);
+        }
+      }
+
+      img:hover {
+        box-shadow: 1px 1px 8px #555;
+      }
+
+      img {
+        transition: .5s;
+        width: 240px;
+        height: 160px;
+        border-radius: 8px;
+      }
+
+      >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+
+        >p {
+          color: #555;
+        }
+
+        >span {
+          color: #999;
+        }
+      }
+    }
+  }
+}

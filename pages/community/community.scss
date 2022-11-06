@@ -1,0 +1,51 @@
+#main{
+  margin: 0 auto;
+  width: var(--container-width);
+  >.crumb{
+    margin: 10px 0;
+  }
+  >.item{
+    >ul{
+      width: 700px;
+      display: flex;
+      justify-content: space-between;
+      >li{
+        font-size: 20px;
+        &.active{
+          color: rgb(234, 89, 89);
+        }
+      }
+    }
+    >.item-bd{
+      display: flex;
+      height: 240px;
+      margin-top: 20px;
+      >img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+      >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+        >span{
+          color: #999;
+          font-size: 14px;
+        }
+        >p{
+          color: #555;
+          font-size: 14px;
+        }
+        >div:last-child{
+          display: flex;
+          >img{
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+}

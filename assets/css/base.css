@@ -1,0 +1,77 @@
+/* 公共样式 */
+:root {
+  --color-primary: #409EFF;
+  --container-width: 1000px;
+  --header-height: 70px;
+  --footer-height: 100px;
+}
+
+#header {
+  background-color: var(--color-primary);
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+body {
+  padding-top: var(--header-height);
+  /* min-height: var(--container-width); */
+}
+
+#footer{
+  height: var(--header-height);
+  background-color: #222221;
+}
+
+::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+}
+
+/* 滚动栏的轨道 */
+::-webkit-scrollbar-track {
+  background-color: #ddd9cf;
+}
+
+/* 滚动栏滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #b3aa94;
+  border-radius: 6px;
+}
+
+/* 隐藏 */
+.hide {
+  display: none;
+}
+
+/* 两行 */
+.line-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.nomore {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  color: var(--color-primary);
+  display: none;
+}
+
+/* 配合精灵图使用 */
+i {
+  display: inline-block;
+}
+
+/* 一行 */
+.line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

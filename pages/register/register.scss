@@ -1,0 +1,58 @@
+#main {
+  background-image: url('../../images/main/zhuce.png.webp');
+  display: flex;
+  height: calc(100vh - var(--header-height));
+  align-items: center;
+  flex-direction: column;
+
+
+  >div {
+    margin-top: 150px;
+
+    >h2 {
+      text-align: center;
+      color: #edce94;
+    }
+
+    >div {
+      >.item {
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        >input {
+          width: 300px;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 8px;
+          background-color: white;
+          margin-top: 20px;
+        }
+
+        span {
+          display: none;
+          font-size: 14px;
+
+          &.ok {
+            color: green;
+          }
+
+          &.err {
+            color: red;
+          }
+        }
+      }
+
+      >button {
+        width: 300px;
+        margin-top: 20px;
+        padding: 10px 25px;
+        font-size: 16px;
+        color: white;
+        border-radius: 8px;
+        background-color: #ebc47c;
+      }
+    }
+  }
+}

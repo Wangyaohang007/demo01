@@ -1,0 +1,49 @@
+#main {
+  margin: 0 auto;
+  width: var(--container-width);
+}
+#main > .crumb {
+  margin: 10px 0;
+}
+#main > .item > ul {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+#main > .item > ul > li {
+  font-size: 20px;
+}
+#main > .item > ul > li.active {
+  color: rgb(234, 89, 89);
+}
+#main > .item > .item-bd {
+  display: flex;
+  height: 240px;
+  margin-top: 20px;
+}
+#main > .item > .item-bd > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#main > .item > .item-bd > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+#main > .item > .item-bd > div > span {
+  color: #999;
+  font-size: 14px;
+}
+#main > .item > .item-bd > div > p {
+  color: #555;
+  font-size: 14px;
+}
+#main > .item > .item-bd > div > div:last-child {
+  display: flex;
+}
+#main > .item > .item-bd > div > div:last-child > img {
+  width: 130px;
+  height: 130px;
+}/*# sourceMappingURL=community.css.map */
