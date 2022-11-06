@@ -1,40 +1,85 @@
-#main {
+#content {
   width: var(--container-width);
   margin: 0 auto;
 }
-#main > .crumb {
+#content > .crumb {
   margin: 10px 0;
 }
-#main > h2 {
-  margin-bottom: 20px;
+#content > .crumb a:hover {
+  color: rgb(248, 85, 85);
 }
-#main > .item {
+#content #main {
+  display: flex;
+  justify-content: space-between;
+}
+#content #main > .item {
   width: 700px;
 }
-#main > .item > .item-bd {
-  display: flex;
+#content #main > .item > h2 {
+  margin-bottom: 20px;
 }
-#main > .item > .item-bd:hover h3 {
+#content #main > .item > .item-bd {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+}
+#content #main > .item > .item-bd:hover h3 {
   color: rgb(222, 85, 85);
 }
-#main > .item > .item-bd img:hover {
+#content #main > .item > .item-bd img:hover {
   box-shadow: 1px 1px 8px #555;
 }
-#main > .item > .item-bd img {
+#content #main > .item > .item-bd img {
   transition: 0.5s;
   width: 240px;
   height: 160px;
   border-radius: 8px;
 }
-#main > .item > .item-bd > div {
+#content #main > .item > .item-bd > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
 }
-#main > .item > .item-bd > div > p {
+#content #main > .item > .item-bd > div > p {
   color: #555;
 }
-#main > .item > .item-bd > div > span {
+#content #main > .item > .item-bd > div > span {
   color: #999;
+}
+#content #main > .sidebar {
+  width: 240px;
+}
+#content #main > .sidebar > .list {
+  margin-top: 50px;
+}
+#content #main > .sidebar > .list > .list-item {
+  display: flex;
+  margin: 20px 0;
+  background-color: rgb(240, 240, 240);
+}
+#content #main > .sidebar > .list > .list-item > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+#content #main > .sidebar > .list > .list-item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content #main > .sidebar > .list > .list-item > div > span {
+  color: #666;
+  font-size: 12px;
+}
+#content #main > .sidebar > .contribute {
+  margin-top: 50px;
+}
+#content #main > .sidebar > .contribute h3 {
+  margin: 20px 0;
+}
+#content #main > .sidebar > .contribute > p {
+  font-size: 13px;
+  color: #666;
+  padding: 5px 0;
 }/*# sourceMappingURL=note.css.map */

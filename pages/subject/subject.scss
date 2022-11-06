@@ -1,10 +1,13 @@
-
 #main {
   margin: 0 auto;
   width: var(--container-width);
 
   >.crumb {
     margin: 10px 0;
+
+    a:hover {
+      color: rgb(248, 85, 85);
+    }
   }
 
   >#diet {
@@ -20,10 +23,15 @@
         flex-direction: column;
         margin-bottom: 30px;
         width: calc((100% - 60px) / 3);
+        background-color: rgb(240, 240, 240);
+
 
         &:hover {
           h3 {
             color: rgb(226, 78, 78);
+          }
+          img{
+            box-shadow: 1px 0px 15px 1px #aaa;
           }
         }
 
@@ -31,6 +39,7 @@
           width: 100%;
           border-radius: 8px;
           cursor: pointer;
+          transition: .3s;
         }
 
         >div {

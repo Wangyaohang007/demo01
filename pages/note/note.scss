@@ -1,50 +1,97 @@
-#main {
+#content {
   width: var(--container-width);
   margin: 0 auto;
 
   >.crumb {
     margin: 10px 0;
+
+    a:hover {
+      color: rgb(248, 85, 85);
+    }
+
   }
 
-  >h2 {
-    margin-bottom: 20px;
-  }
+  #main {
+    display: flex;
+    justify-content: space-between;
+    >.item {
+      width: 700px;
 
-  >.item {
-    width: 700px;
-
-    >.item-bd {
-      display: flex;
-
-      &:hover {
-        h3 {
-          color: rgb(222, 85, 85);
-        }
+      >h2 {
+        margin-bottom: 20px;
       }
 
-      img:hover {
-        box-shadow: 1px 1px 8px #555;
-      }
-
-      img {
-        transition: .5s;
-        width: 240px;
-        height: 160px;
-        border-radius: 8px;
-      }
-
-      >div {
+      >.item-bd {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: 20px;
+        background-color: rgb(240, 240, 240);
 
-        >p {
-          color: #555;
+        &:hover {
+          h3 {
+            color: rgb(222, 85, 85);
+          }
         }
 
-        >span {
-          color: #999;
+        img:hover {
+          box-shadow: 1px 1px 8px #555;
+        }
+
+        img {
+          transition: .5s;
+          width: 240px;
+          height: 160px;
+          border-radius: 8px;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 20px;
+
+          >p {
+            color: #555;
+          }
+
+          >span {
+            color: #999;
+          }
+        }
+      }
+    }
+    >.sidebar{
+      width: 240px;
+      >.list{
+        margin-top:50px;
+        >.list-item{
+          display: flex;
+          margin: 20px 0;
+          background-color: rgb(240, 240, 240);
+          >img{
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-right: 10px;
+          }
+          >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            >span{
+              color: #666;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      >.contribute{
+        margin-top: 50px;
+        h3{
+          margin: 20px 0;
+        }
+        >p{
+          font-size: 13px;
+          color: #666;
+          padding: 5px 0;
         }
       }
     }
